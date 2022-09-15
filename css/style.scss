@@ -1,0 +1,219 @@
+$no_algos: 6;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: large;
+  // font-weight: bold;
+  // text-transform: uppercase;
+}
+
+// nav {
+//   display: grid;
+//   grid-template-columns: 30% 60%;
+//   border: 1px solid #000;
+//   column-gap: 10%;
+//   padding: 0% 5%;
+//   .array-inputs {
+//     display: grid;
+//     grid-template-columns: 60% 40%;
+//     border: 1px solid red;
+
+//     place-content: center;
+//     padding: 5% 0%;
+
+//     #a_size {
+//       padding: 5% 0%;
+//     }
+//     #a_speed {
+//       padding: 5% 0%;
+//     }
+//     #a_generate {
+//       background-color: transparent;
+//       border: none;
+//       outline: none;
+//       color: white;
+//       padding: 4% 0% 0% 0%;
+//       padding-left: 20%;
+//       &:hover {
+//         cursor: pointer;
+//       }
+//     }
+//   }
+//   .header_right {
+//     display: flex;
+//     flex-direction: column;
+
+//     .nav-heading {
+//       display: inline-block;
+//       //text-align: center;
+//       font-size: xxx-large;
+//       padding: 3% 0%;
+//     }
+//     .algos {
+//       display: grid;
+//       grid-template-columns: repeat($no_algos, (100% / $no_algos));
+//       place-content: center;
+//       padding: 2% 0%;
+//       button {
+//         background-color: transparent;
+//         border: none;
+//         color: white;
+//         outline: none;
+//         padding: 5% 0%;
+//         font-size: x-large;
+//         &:hover {
+//           background-color: blue;
+//           cursor: pointer;
+//         }
+//       }
+
+//       .butt_locked {
+//         background-color: transparent;
+//         cursor: pointer;
+//         &:hover {
+//           background-color: transparent;
+//           cursor: pointer;
+//         }
+//       }
+//       .butt_selected {
+//         background-color: white;
+//         color: green;
+//         &:hover {
+//           background-color: white;
+//           cursor: pointer;
+//         }
+//       }
+//       .butt_unselected {
+//         &:hover {
+//           background-color: blue;
+//           cursor: pointer;
+//         }
+//       }
+//     }
+//   }
+// }
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    .nav-heading {
+      font-weight: bold;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+    i {
+      font-size: 1.5rem;
+    }
+  }
+
+  .algos {
+    display: flex;
+    // padding: 1rem;
+    // background: #f5f5f5;
+    padding: 0px 1rem;
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 1rem;
+      margin-left: 10px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+      font-size: 1rem;
+      &:hover {
+        cursor: pointer;
+        background: #1f293748;
+      }
+    }
+  }
+
+  .butt_locked {
+    background-color: transparent;
+    cursor: pointer;
+    &:hover {
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+  .butt_selected {
+    background-color: white;
+    // color: green;
+    &:hover {
+      // background-color: white;
+      cursor: pointer;
+    }
+  }
+  .butt_unselected {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+section {
+  display: flex;
+
+  #Info_Cont {
+    margin-top: 2rem;
+    padding: 2rem;
+    line-height: 2rem;
+    width: 20%;
+    // h3 {
+    //   text-decoration: underline;
+    // }
+
+    .Complexity_Containers {
+      .Pair_Definitions {
+        display: flex;
+        font-weight: 400;
+        p {
+          display: inline;
+        }
+
+        p.Sub_Heading {
+          font-size: medium;
+          text-transform: none;
+        }
+      }
+    }
+  }
+  #array_container {
+    border: 1px solid #000;
+    display: flex;
+    width: 80%;
+    height: 70vh;
+    margin-top: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+/*
+@media (max-width: 480px)//Mobiles
+{
+    
+}
+
+@media (min-width: 481px) and (max-width: 1250px)//Tablets
+{
+
+}
+
+@media (min-width: 1251px)//Laptops and up
+{
+
+}
+*/
